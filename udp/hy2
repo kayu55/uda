@@ -36,7 +36,7 @@ install_hysteria(){
   apt update
   apt -y install curl wget openssl iptables-persistent netfilter-persistent
 
-  wget -q https://raw.githubusercontent.com/kanggacorvpnx/error404/main/udp/server_hy2.sh
+  wget -q https://raw.githubusercontent.com/kayu55/uda/main/udp/server_hy2.sh
   bash server_hy2.sh
   rm -f server_hy2.sh
 
