@@ -3,6 +3,7 @@
 ````
 chmod +x /usr/local/bin/zivpn-manager
 ````
+````
 /usr/local/bin/zivpn-manager
 ````
 
