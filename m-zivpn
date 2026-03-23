@@ -903,7 +903,7 @@ GOLD="\033[0;37m"
 RESET="\033[0m"
     clear
 printf "${BIRU}────────────────────────────────────────${RESET}\n"
-echo -e "\033[0;35m           UDP ZIVPN MANAGERS         \033[0m"
+echo -e "\E[42;1;37m           UDP ZIVPN MANAGERS         \033[0m"
 printf "${BIRU}────────────────────────────────────────${RESET}\n"
 printf "${HIJAU}1) ${GOLD} Create ${RESET}\n"
 printf "${HIJAU}2) ${GOLD} Triall  ${RESET}\n"
