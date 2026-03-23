@@ -1,9 +1,5 @@
 #!/bin/bash
 set -e
-
-# YAN CONFIGS ( LT )
-# SAGULING BANDUNG BARAT
-
 # ===============================
 # BASIC SETUP
 # ===============================
