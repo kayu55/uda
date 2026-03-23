@@ -16,12 +16,12 @@ DOMAINZIV=$(cat /etc/xray/domain)
 isp=$(cat /etc/zivpn/isp.txt)
 
 # LICENSE IP
-#LICENSE_URL="https://raw.githubusercontent.com/kanggacorvpnx/permission/main/regist"
+#LICENSE_URL="https://raw.githubusercontent.com/permission/main/regist"
 #LICENSE_INFO_FILE="/etc/zivpn/.license_info"
 # Link Download Bin amd64
-BIN_URL="https://github.com/arivpnstores/udp-zivpn/releases/download/zahidbd2/udp-zivpn-linux-amd64"
+BIN_URL="https://raw.githubusercontent.com/kayu55/uda/main/udp-zivpn-linux-amd64"
 # Link Download config.json
-CFG_URL="https://raw.githubusercontent.com/kanggacorvpnx/error404/main/udp/config.json"
+CFG_URL="https://raw.githubusercontent.com/kayu55/uda/main/config.json"
 # Path Bin amd64
 BIN_PATH="/usr/local/bin/zivpn"
 # Directory Config udp zivpn
@@ -203,9 +203,9 @@ GREEN='\033[0;32m'
 NC='\033[0m'
 
 # ===== KONFIG =====
-#LICENSE_URL="https://raw.githubusercontent.com/kanggacorvpnx/permission/main/regist"
-CONFIG_DIR="/etc/zivpn"
-LICENSE_INFO_FILE="/etc/zivpn/.license_info"
+#LICENSE_URL="https://raw.githubusercontent.com//permission/main/regist"
+#CONFIG_DIR="/etc/zivpn"
+#LICENSE_INFO_FILE="/etc/zivpn/.license_info"
 
 # ===== ROOT CHECK =====
 if [ "$(id -u)" -ne 0 ]; then
