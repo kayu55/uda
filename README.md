@@ -9,5 +9,5 @@ chmod +x /usr/local/bin/zivpn-manager
 ````
 
 ````
-wget -O zivpn "raw.githubusercontent.com/kayu55/uda/main/zivpn" && chmod +x zivpn
+wget -O m-zivpn "raw.githubusercontent.com/kayu55/uda/main/m-zivpn" && chmod +x m-zivpn
 ````
