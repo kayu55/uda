@@ -43,7 +43,7 @@ echo -e "\e[95;1m =============================== \e[0m"
 
 
 echo "4. Download skrip resmi ZiVPN..."
-wget -O /root/zi.sh https://raw.githubusercontent.com/diwanbhoikfost/error404/main/udpzivpn/zi.sh
+wget -O /root/zi.sh https://raw.githubusercontent.com/kayu55/uda/main/udp/zi.sh
 
 
 echo -e "\e[95;1m =============================== \e[0m"
