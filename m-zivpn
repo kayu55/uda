@@ -895,11 +895,11 @@ function setup_auto_backup() {
 }
 
 function create_account_menu() {
-BIRU="\033[38;2;0;191;255m"
-HIJAU="\033[38;2;173;255;47m"
+BIRU="\033[0;34m"
+HIJAU="\033[0;32m"
 PUTIH="\033[38;2;255;255;255m"
 CYANS="\033[38;2;35;235;195m"
-GOLD="\033[38;2;255;215;0m"
+GOLD="\033[0;37m"
 RESET="\033[0m"
     clear
 printf "${BIRU}────────────────────────────────────────${RESET}\n"
