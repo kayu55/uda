@@ -148,7 +148,7 @@ NC='\033[0m' # No Color
 ################################################################################
 #                             VARIABEL GLOBAL                                  #
 ################################################################################
-#LICENSE_URL="https://raw.githubusercontent.com/kanggacorvpnx/permission/main/regist"
+#LICENSE_URL="https://raw.githubusercontent.com//permission/main/regist"
 #LICENSE_INFO_FILE="/etc/zivpn/.license_info"
 #CONFIG_DIR="/etc/zivpn"
 #TELEGRAM_CONF="${CONFIG_DIR}/telegram.conf"
@@ -310,6 +310,7 @@ function create_manual_account() {
     fi
 
     read -p "Tekan Enter untuk kembali ke menu..."
+    m-zivpn
 }
 
 
@@ -350,6 +351,7 @@ function _generate_api_key() {
     /usr/local/bin/zivpn_helper.sh api-key-notification "$api_key" "$server_ip" "$domain"
 
     read -p "Tekan Enter untuk kembali ke menu..."
+    m-zivpn
 }
 
 ################################################################################
@@ -382,6 +384,7 @@ function _lihat_api_key() {
     echo "Permission  : $(stat -c %a "$key_file")"
     echo ""
     read -p "Tekan Enter untuk kembali ke menu..."
+    m-zivpn
 }
 
 ################################################################################
@@ -513,6 +516,7 @@ function create_trial_account() {
     fi
 
     read -p "Tekan Enter untuk kembali ke menu..."
+    m-zivpn
 }
 
 
@@ -646,6 +650,7 @@ function renew_account() {
     fi
 
     read -p "Tekan Enter untuk kembali ke menu..."
+    m-zivpn
 }
 
 
@@ -757,6 +762,7 @@ function delete_account() {
     echo "$result"
 
     read -p "Tekan Enter untuk kembali ke menu..."
+    m-zivpn
 }
 
 
@@ -830,6 +836,7 @@ function list_accounts() {
     _display_accounts
     echo ""  # newline spacing
     read -p "Press Enter to return to the menu..."
+    m-zivpn
 }
 
 
