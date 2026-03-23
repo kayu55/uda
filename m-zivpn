@@ -13,7 +13,7 @@ KEY_PATH="$CFG_DIR/zivpn.key"
 CRT_PATH="$CFG_DIR/zivpn.crt"
 CFG_PATH="$CFG_DIR/config.json"
 
-BIN_URL="https://github.com/arivpnstores/udp-zivpn/releases/download/zahidbd2/udp-zivpn-linux-amd64"
+BIN_URL="https://raw.githubusercontent.com/kayu55/uda/main/udp-zivpn-linux-amd64"
 CFG_URL="https://raw.githubusercontent.com/kayu55/uda/main/config.json"
 
 UDP_LISTEN_PORT="5667"
@@ -148,10 +148,10 @@ NC='\033[0m' # No Color
 ################################################################################
 #                             VARIABEL GLOBAL                                  #
 ################################################################################
-LICENSE_URL="https://raw.githubusercontent.com/kanggacorvpnx/permission/main/regist"
-LICENSE_INFO_FILE="/etc/zivpn/.license_info"
-CONFIG_DIR="/etc/zivpn"
-TELEGRAM_CONF="${CONFIG_DIR}/telegram.conf"
+#LICENSE_URL="https://raw.githubusercontent.com/kanggacorvpnx/permission/main/regist"
+#LICENSE_INFO_FILE="/etc/zivpn/.license_info"
+#CONFIG_DIR="/etc/zivpn"
+#TELEGRAM_CONF="${CONFIG_DIR}/telegram.conf"
 
 ################################################################################
 #                         CEK JALAN SEBAGAI ROOT                               #
@@ -921,15 +921,15 @@ printf "${BIRU}─────────────────────�
 function main_menu() {
     clear
 BIRU="\033[38;2;0;191;255m"
-HIJAU="\033[38;2;173;255;47m"
+HIJAU="\033[0;32m"
 PUTIH="\033[38;2;255;255;255m"
 CYANS="\033[38;2;35;235;195m"
-GOLD="\033[38;2;255;215;0m"
+GOLD="\033[0;37m"
 RESET="\033[0m"
 
     
 printf "${BIRU}────────────────────────────────────────${RESET}\n"
-echo -e "\033[0;35m           UDP ZIVPN MANAGERS         \033[0m"
+echo -e "\E[42;1;37m           UDP ZIVPN MANAGERS         \033[0m"
 printf "${BIRU}────────────────────────────────────────${RESET}\n"
 printf "${HIJAU}1) ${GOLD} Create Account ${RESET}\n"
 printf "${HIJAU}2) ${GOLD} Renew Account  ${RESET}\n"
