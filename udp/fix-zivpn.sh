@@ -1,5 +1,4 @@
-# Decrypted by LT | FUSCATOR
-# Github- https://github.com/LunaticTunnel/Absurd
+# cok
 
 chattr -i /etc/zivpn/api_auth.key
 echo -e "Backup Data ZiVPN Old..."
