@@ -27,5 +27,5 @@ wget -O udepe "raw.githubusercontent.com/kayu55/uda/main/udepe" && chmod +x udep
 ````
 
 ````
-wget -O m-ssh "raw.githubusercontent.com/kayu55/uda/main/m-ssh.sh" && chmod +x m-ssh
+wget -O menu-ssh "raw.githubusercontent.com/kayu55/uda/main/menu-ssh.sh" && chmod +x menu-ssh
 ````
