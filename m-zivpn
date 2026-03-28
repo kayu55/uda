@@ -947,7 +947,8 @@ printf "${HIJAU}6) ${GOLD} Generate apikey ${RESET}\n"
 printf "${HIJAU}7) ${GOLD} Restart Zivpn  ${RESET}\n"
 printf "${HIJAU}8) ${GOLD} Fix Zivpn     ${RESET}\n"
 printf "${HIJAU}x) ${GOLD} EXIT     ${RESET}\n"
-printf "${HIJAU}x) ${GOLD} UPLOAD BY ARYA BLITAR 081450330727  ${RESET}\n"
+printf "${HIJAU}\n"
+printf "${HIJAU} ${GOLD}   UPLOAD BY ARYA BLITAR \E[42;1;37m 081450330727  ${RESET}\n"
 printf "${BIRU}────────────────────────────────────────${RESET}\n"            
     read -p "Choose an option 1-8: " choice
     case $choice in
