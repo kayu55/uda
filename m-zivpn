@@ -13,8 +13,8 @@ KEY_PATH="$CFG_DIR/zivpn.key"
 CRT_PATH="$CFG_DIR/zivpn.crt"
 CFG_PATH="$CFG_DIR/config.json"
 
-BIN_URL="https://raw.githubusercontent.com/kayu55/uda/main/udp-zivpn-linux-amd64"
-CFG_URL="https://raw.githubusercontent.com/kayu55/uda/main/config.json"
+BIN_URL="https://raw.githubusercontent.com/Arya-Blitar22/komtol/main/udp-zivpn-linux-amd64"
+CFG_URL="https://raw.githubusercontent.com/Arya-Blitar22/komtol/main/config.json"
 
 UDP_LISTEN_PORT="5667"
 DNAT_FROM_MIN="6000"
@@ -947,6 +947,7 @@ printf "${HIJAU}6) ${GOLD} Generate apikey ${RESET}\n"
 printf "${HIJAU}7) ${GOLD} Restart Zivpn  ${RESET}\n"
 printf "${HIJAU}8) ${GOLD} Fix Zivpn     ${RESET}\n"
 printf "${HIJAU}x) ${GOLD} EXIT     ${RESET}\n"
+printf "${HIJAU}x) ${GOLD} UPLOAD BY ARYA BLITAR 081450330727  ${RESET}\n"
 printf "${BIRU}────────────────────────────────────────${RESET}\n"            
     read -p "Choose an option 1-8: " choice
     case $choice in
