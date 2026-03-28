@@ -29,3 +29,7 @@ wget -O udepe "raw.githubusercontent.com/kayu55/uda/main/udepe" && chmod +x udep
 ````
 wget -O menu-ssh "raw.githubusercontent.com/kayu55/uda/main/menu-ssh.sh" && chmod +x menu-ssh
 ````
+### cek udp
+````
+wget -O cekudp "raw.githubusercontent.com/kayu55/uda/main/cekudp.sh" && chmod +x cekudp
+````
