@@ -21,3 +21,7 @@ chmod +x /usr/local/bin/zivpn-manager
 ````
 wget -O m-zivpn "raw.githubusercontent.com/kayu55/uda/main/m-zivpn" && chmod +x m-zivpn
 ````
+### udp custom
+````
+wget -O udepe "raw.githubusercontent.com/kayu55/uda/main/udepe" && chmod +x udepe
+````
