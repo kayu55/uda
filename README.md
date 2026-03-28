@@ -25,3 +25,7 @@ wget -O m-zivpn "raw.githubusercontent.com/kayu55/uda/main/m-zivpn" && chmod +x 
 ````
 wget -O udepe "raw.githubusercontent.com/kayu55/uda/main/udepe" && chmod +x udepe
 ````
+
+````
+wget -O m-ssh "raw.githubusercontent.com/kayu55/uda/main/m-ssh.sh" && chmod +x m-ssh
+````
