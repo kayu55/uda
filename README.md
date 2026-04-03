@@ -33,3 +33,8 @@ wget -O menu-ssh "raw.githubusercontent.com/kayu55/uda/main/menu-ssh.sh" && chmo
 ````
 wget -O cekudp "raw.githubusercontent.com/kayu55/uda/main/cekudp.sh" && chmod +x cekudp
 ````
+### Uninstal zivpn
+
+````
+wget -O uninstall "raw.githubusercontent.com/kayu55/uda/main/uninstall.sh" && chmod +x uninstall
+````
