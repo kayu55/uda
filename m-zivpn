@@ -979,12 +979,12 @@ printf "${HIJAU}7) ${GOLD} Restart Zivpn  ${RESET}\n"
 printf "${HIJAU}8) ${GOLD} Install Zivpn     ${RESET}\n"
 printf "${HIJAU}9) ${GOLD} Backup Zivpn     ${RESET}\n"
 printf "${HIJAU}10) ${GOLD}Format Size Kib    ${RESET}\n"
-printf "${HIJAU}12) ${GOLD}Uninstall Off Zivpn     ${RESET}\n"
+printf "${HIJAU}11) ${GOLD}Uninstall Off Zivpn     ${RESET}\n"
 printf "${HIJAU}x) ${GOLD} EXIT     ${RESET}\n"
 printf "${HIJAU}\n"
 printf "${HIJAU}${GOLD}💥  UPLOAD BY ARYA BLITAR  \E[42;1;37m081450330727${RESET}\n"
 printf "${BIRU}────────────────────────────────────────${RESET}\n"            
-    read -p "Choose an option 1-8: " choice
+    read -p "Choose an option 1-11: " choice
     case $choice in
         1) create_account_menu ;;
         2) renew_account ;;
