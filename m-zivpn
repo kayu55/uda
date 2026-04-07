@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 curl -s ipinfo.io | grep region | cut -d '"' -f4 > /etc/zivpn/isp.txt
-DOWNLOAD_ZIVPN() {
+INSTALL_ZIVPN() {
 
 set -euo pipefail
 
@@ -264,6 +264,37 @@ EOF
     fi
 }
 
+#UNINSTALL
+function uninstall_zivpn() {
+clear
+echo -e "Uninstalling ZiVPN ..."
+systemctl stop zivpn.service 1> /dev/null 2> /dev/null
+systemctl stop zivpn_backfill.service 1> /dev/null 2> /dev/null
+systemctl disable zivpn.service 1> /dev/null 2> /dev/null
+systemctl disable zivpn_backfill.service 1> /dev/null 2> /dev/null
+rm /etc/systemd/system/zivpn.service 1> /dev/null 2> /dev/null
+rm /etc/systemd/system/zivpn_backfill.service 1> /dev/null 2> /dev/null
+killall zivpn 1> /dev/null 2> /dev/null
+rm -rf /etc/zivpn 1> /dev/null 2> /dev/null
+rm /usr/local/bin/zivpn 1> /dev/null 2> /dev/null
+if pgrep "zivpn" >/dev/null; then
+  echo -e "Server Running"
+else
+  echo -e "Server Stopped"
+fi
+file="/usr/local/bin/zivpn" 1> /dev/null 2> /dev/null
+if [ -e "$file" ] 1> /dev/null 2> /dev/null; then
+  echo -e "Files still remaining, try again"
+else
+  echo -e "Successfully Removed"
+fi
+echo "Cleaning Cache & Swap"
+echo 3 > /proc/sys/vm/drop_caches
+sysctl -w vm.drop_caches=3
+swapoff -a && swapon -a
+echo -e "Done."
+
+}
 ################################################################################
 #                     BUAT AKUN UDP ZIVPN SECARA MANUAL                        #
 ################################################################################
@@ -946,6 +977,9 @@ printf "${HIJAU}5) ${GOLD} Listed Account  ${RESET}\n"
 printf "${HIJAU}6) ${GOLD} Generate apikey ${RESET}\n"
 printf "${HIJAU}7) ${GOLD} Restart Zivpn  ${RESET}\n"
 printf "${HIJAU}8) ${GOLD} Fix Zivpn     ${RESET}\n"
+printf "${HIJAU}9) ${GOLD} Backup Zivpn     ${RESET}\n"
+printf "${HIJAU}10) ${GOLD}FORMAT SIZE KIB     ${RESET}\n"
+printf "${HIJAU}12) ${GOLD}UNINSTALL OFF ZIVPN     ${RESET}\n"
 printf "${HIJAU}x) ${GOLD} EXIT     ${RESET}\n"
 printf "${HIJAU}\n"
 printf "${HIJAU}${GOLD}💥  UPLOAD BY ARYA BLITAR  \E[42;1;37m081450330727${RESET}\n"
@@ -959,7 +993,10 @@ printf "${BIRU}─────────────────────�
         5) list_accounts ;;
         6) _generate_api_key ;;
         7) systemctl restart zivpn.service --no-block ;;
-        8) DOWNLOAD_ZIVPN ;;
+        8) INSTALL_ZIVPN ;;
+        9) setup_auto_backup ;;
+        10) _display_accounts ;;
+        11) uninstall_zivpn ;;
         *) menu ;;
     esac
 }
