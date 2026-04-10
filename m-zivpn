@@ -232,12 +232,12 @@ function _create_account_logic() {
         clear
         DOMAINZIV=$(cat /etc/xray/domain)
         echo "==================================="
-        echo "           UDP ZIVPN CREATE            "        
+        echo "         SUKSES CREATE ZIVPN            "        
         echo "==================================="        
         echo "==================================="  
-        echo " DOMAIN   : $DOMAINZIV"
-        echo " REGION   : $isp"
-        echo " PASSWOR : $password"
+        echo " DOMAIN    : $DOMAINZIV"
+        echo " REGION    : $isp"
+        echo " PASSWORD  : $password"
         echo " EXPIRY IN : $EXPIRE_FORMATTED"
         echo "==================================="  
         echo "Terima kasih telah menggunakan layanan kami"
@@ -245,12 +245,12 @@ function _create_account_logic() {
 #send to tele
         local message=$(cat <<EOF
 ===================================
-           UDP ZIVPN CREATE
+           SUKSES CREATE ZIVPN
 ===================================
- DOMAIN   : $DOMAINZIV
- REGION   : $isp
- PASWORD : $password
- EXPIRY IN : $EXPIRE_FORMATTED
+DOMAIN    : $DOMAINZIV"
+REGION    : $isp"
+PASSWORD  : $password"
+EXPIRY IN : $EXPIRE_FORMATTED"
 ===================================
 EOF
         )
